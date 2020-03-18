@@ -118,3 +118,15 @@ h2{
 	padding: 20px;
 
 }
+
+
+
+.reference h3{
+	padding-bottom: 20px;
+}
+
+.reference p a{
+	font-weight: bold;
+	font-size: 1rem;
+	color: white;
+}
