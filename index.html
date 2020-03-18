@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Covid-19 Plateforme</title>
+	<link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="styles/navbar-style.css">
+	<link rel="stylesheet" type="text/css" href="styles/index-style.css">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+
+	<!-- NAVBAR -->
+	<div class="main-navbar">
+		<a href="index.html"><img class="main-navbar__logo" src="images/logo2.png"></a>
+		<nav>
+			<ul class="main-navbar__list">
+				<li class="main-navbar__list--element"><a href="index.html">Donnees</a></li>
+				<li class="main-navbar__list--element"><a href="carte.html">Carte Mondiale</a></li>
+				<li class="main-navbar__list--element"><a href="wiki.html">Wiki</a></li>
+				<li class="main-navbar__list--element"><a href="propos.html">A Propos</a></li>
+			</ul>
+		</nav>
+		<div>
+			<a href="#" class="main-navbar__donate">Contribue Aux Dev <img class="main-navbar__donate--coin" src="images/coins1.png"></a>
+		</div>
+	</div>
+
+
+
+
+
+
+	<!-- BODY -->
+	<div class="stat-time">
+		<p>Données Prises Le:</p>
+		<p id="number0"></p>
+	</div>
+
+
+	<!--sidebar stats-->
+
+
+	<div class="main-container">
+		<div class="main-container__stats">
+			<div class="main-container__stats--intro">
+				<h2>Statistique Globale</h2>
+			</div>
+			<div class="main-container__stats--stats">
+				<div class="main-container__stats--stats-confirmedcases">
+					<p id="number1" class="number"></p>
+					<p class="text">Cas confirmés</p>
+				</div>
+				<div class="main-container__stats--stats-deceased">
+					<p id="number2" class="number"></p>
+					<p class="text">Total décés</p>
+				</div>
+				<div class="main-container__stats--stats-recovered">
+					<p id="number3" class="number"></p>
+					<p class="text">Total guéri</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+	<div class="main-container">
+		<div class="main-container__stats">
+			<div class="main-container__stats--intro">
+				<h2>Statistique En Algerie</h2>
+				
+			</div>
+			<div class="main-container__stats--stats">
+				<div class="main-container__stats--stats-confirmedcases">
+					<p id="number4" class="number"></p>
+					<p class="text">Cas confirmés</p>
+				</div>
+				<div class="main-container__stats--stats-deceased">
+					<p id="number5" class="number"></p>
+					<p class="text">Total décés</p>
+				</div>
+				<div class="main-container__stats--stats-recovered">
+					<p id="number6" class="number"></p>
+					<p class="text">Total guéri</p>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+
+</body>
+
+
+<script type="text/javascript" src="js/script.js"></script>
+</html>

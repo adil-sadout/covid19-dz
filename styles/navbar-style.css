@@ -1,0 +1,84 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+a, ul, li, button{
+	color: black;
+	list-style: none;
+	font-style: none;
+	text-decoration: none;
+	display: inline-block;
+}
+
+
+.main-navbar{
+	background-color: #292929;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+.main-navbar__logo{
+	height: 50px;
+}
+
+
+.main-navbar nav ul{
+	padding: 20px;
+}
+
+.main-navbar nav ul li{
+	padding: 0px 10px;
+	font-size: 18px;
+}
+.main-navbar nav ul li a:hover{
+	color: lightgray;
+}
+
+.main-navbar nav ul li a{
+	color: white;
+	font-family: 'arial', sans-serif;
+	font-weight: bold;
+
+}
+
+
+
+
+
+
+.main-navbar__donate{
+	text-align: center;
+	padding: 10px;
+	background: #E02828;
+	font-family: 'Oswald', sans-serif;
+	width: 175px;
+	height: 45px;
+	border-radius: 5px;
+	color: white;
+}
+
+.main-navbar__donate--coin{
+	height: 20px;
+}
+
+
+body{
+	background: #5A5657;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.main-container{
+	color: #DBDBEB;
+	margin: 2% 3% 0 3%;
+	text-align: center;
+	background-color: #292929;
+	padding-bottom: 30px;
+	border-radius: 10px;
+}

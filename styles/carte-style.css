@@ -1,0 +1,28 @@
+
+
+
+
+.map-info{
+	font-size: 20px;
+	display: block;
+	color: white;
+	padding: 20px;
+	width: 350px;
+	margin: auto;
+	text-align: left;
+}
+
+
+
+iframe{
+	border: 0px;
+	border-radius: 15px;
+}
+
+.map-info h2{
+	text-align: center;
+}
+
+.map-info li{
+	color: white;
+}

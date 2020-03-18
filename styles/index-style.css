@@ -1,0 +1,74 @@
+
+.stat-time{
+	color: white;
+	margin: 20px 0;
+	text-align: center;
+	font-size: 2rem;
+}
+
+
+.main-container__stats--intro{
+	font-family: 'arial', sans-serif;
+	padding: 20px;
+}
+
+.main-container__stats--intro h2{
+	color: white;
+	font-size: 2rem;
+}
+
+.main-container__stats p{
+	padding: 5px;
+	font-family: 'verdana',sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+
+}
+
+
+.main-container__stats--stats div{
+	display: inline-block;
+	width: 30%;
+}
+
+.main-container__stats--stats p{
+	font-size: 10px;
+}
+
+
+.main-container__stats--stats div{
+	padding-top: 10px;
+}
+
+.main-container__stats--stats .text{
+	font-size: 1.2rem;
+}
+
+.main-container__stats--stats .number{
+	font-size: 3rem;
+	padding: 0 20px;
+}
+
+.main-container__stats--stats-confirmedcases .number{
+	color: white;
+}
+
+.main-container__stats--stats-deceased .number{
+	color: red;
+}
+
+.main-container__stats--stats-serious .number{
+	color: yellow;
+}
+
+.main-container__stats--stats-recovered .number{
+	color: lightgreen
+
+
+
+
+
+
+
+
+
