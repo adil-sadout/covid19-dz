@@ -2,10 +2,6 @@ svg{
 	display: inline-block;
 }
 
-.main-container{
-	height: 500px;
-}
-
 
 .main-container__wikititle{
 	
@@ -45,3 +41,16 @@ svg{
 	vertical-align: bottom;
 }
 
+
+
+.main-container__whatsiscovid--list{
+	padding: 50px;
+	text-align: left;
+}
+
+.main-container__whatsiscovid--list li{
+	font-size: 26px;
+	color: white;
+	list-style: upper-alpha;
+	display: list-item;
+}
