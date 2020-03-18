@@ -1,13 +1,51 @@
 .main-container__propos{
 	padding: 40px;
+	color: white;
+	font-size: 2rem;
+
 }
 
 .main-container__propos svg{
 	vertical-align: middle;
 	margin: 0 10px 5px 0;
+
 }
 
 
 .main-container__propos h1{
 	display: inline-block;
+
+}
+.main-container__who{
+	margin:auto;
+	text-align: center;
+	width: 60%;
+}
+
+.main-container__who h2{
+	display: inline-block;
+	font-size: 2rem;
+	vertical-align: bottom;
+	padding: 5px 0;
+}
+
+
+.main-container__who svg{
+	vertical-align: middle;
+	margin: 0 3px 3px 0;
+}
+
+
+.main-container__who li{
+	text-align: left;
+	font-size: 1.5rem;
+	
+	color: white;
+	list-style: square;
+	display: list-item;
+}
+
+.main-container__who li a{
+	color: white;
+	text-decoration: underline;
 }

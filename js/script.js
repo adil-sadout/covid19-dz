@@ -37,7 +37,6 @@ async function getCovidAlgeriaStats(){
 
 		const data1 =await response.json();
 		const {latest_stat_by_country} = data1;
-		console.log(latest_stat_by_country);
 		const data = latest_stat_by_country[0];
 		document.getElementById('number4').textContent = data.total_cases;
 		document.getElementById('number5').textContent = data.total_deaths;
