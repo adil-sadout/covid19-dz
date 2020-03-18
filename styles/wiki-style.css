@@ -1,7 +1,14 @@
+li{
+	font-size: 15px;
+	font-family: 'helvetica', sans-serif;
+}
 svg{
 	display: inline-block;
 }
 
+.main-container{
+	padding: 50px;
+}
 
 .main-container__wikititle{
 	
