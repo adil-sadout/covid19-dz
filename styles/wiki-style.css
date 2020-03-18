@@ -60,8 +60,9 @@ svg{
 .main-container__whatsiscovid--list li{
 	font-size: 26px;
 	color: white;
-	list-style: upper-alpha;
+	list-style: decimal;
 	display: list-item;
+	padding:5px 0;
 }
 
 
