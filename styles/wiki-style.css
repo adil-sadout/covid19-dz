@@ -1,9 +1,21 @@
+p{
+	font-size: 15px;
+	font-family: 'helvetica', sans-serif;
+	font-size: 26px;
+	color: white;
+}
+
 li{
 	font-size: 15px;
 	font-family: 'helvetica', sans-serif;
 }
 svg{
 	display: inline-block;
+}
+
+
+h2{
+	font-size: 2rem;
 }
 
 .main-container{
@@ -75,4 +87,34 @@ svg{
 	padding: 5px;
 	width: 45%;
 	vertical-align: middle;
+}
+
+
+
+.main-container__whatsiscovid--question-2--tip h3{
+	text-align: left;
+	font-size: 2rem;
+	text-indent: 1rem;
+}
+
+
+.main-container__whatsiscovid--question-2--tip-3 h3{
+	padding-bottom: 20px; 
+}
+
+
+.main-container__whatsiscovid--question-2--tip-3 p{
+	text-align: left;
+	color: white;
+	padding-left: 30px;
+}
+
+.main-container__whatsiscovid--question-2--tip-3 ul li{
+	background: white;
+	color: black;
+	display: list-item;
+	text-align: left;
+	font-size: 2rem;
+	padding: 20px;
+
 }
