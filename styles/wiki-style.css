@@ -25,7 +25,9 @@ svg{
 }
 
 
-
+.main-container__whatsiscovid div{
+	padding-top: 25px;
+}
 
 
 .main-container__whatsiscovid--title{
@@ -53,4 +55,16 @@ svg{
 	color: white;
 	list-style: upper-alpha;
 	display: list-item;
+}
+
+
+
+
+.main-container__whatsiscovid--appearance p{
+	padding: 5px;
+}
+.main-container__whatsiscovid--appearance img{
+	padding: 5px;
+	width: 45%;
+	vertical-align: middle;
 }

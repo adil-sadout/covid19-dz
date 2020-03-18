@@ -24,7 +24,7 @@ async function getCovidGlobalStats(){
 		
 
 }
-getCovidGlobalStats();
+
 
 async function getCovidAlgeriaStats(){
 		const response = await fetch(api_url_algeria_stats, {
@@ -47,21 +47,10 @@ async function getCovidAlgeriaStats(){
 
 
 
+
+getCovidGlobalStats();
 getCovidAlgeriaStats();
 
-
-// async function getCovidAlgeriaStats(){
-// 		const response = await fetch(api_url_algeria_stats2)
-
-// 		const data1 =await response.json();
-
-// 		const {cases,deaths,recovered} = data1;
-// 		document.getElementById('number4').textContent = cases;
-// 		document.getElementById('number5').textContent = deaths;
-// 		document.getElementById('number6').textContent = recovered;
-		
-
-// }
 
 
 
