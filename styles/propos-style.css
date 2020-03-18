@@ -1,0 +1,13 @@
+.main-container__propos{
+	padding: 40px;
+}
+
+.main-container__propos svg{
+	vertical-align: middle;
+	margin: 0 10px 5px 0;
+}
+
+
+.main-container__propos h1{
+	display: inline-block;
+}

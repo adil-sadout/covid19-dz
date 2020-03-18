@@ -1,5 +1,5 @@
 var api_url_global_stats = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php"
-var api_url_algeria_stats = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=algeria"
+var api_url_algeria_stats = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php?country=algeria"
 // var api_url_algeria_stats2 = "https://corona.lmao.ninja/countries/algeria"
 
 
@@ -30,17 +30,18 @@ async function getCovidAlgeriaStats(){
 		const response = await fetch(api_url_algeria_stats, {
 			"method": "GET",
 			"headers": {
-				"x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
+				"x-rapidapi-host": "coronavirus-monitor.p.rapidapi.com",
 				"x-rapidapi-key": "95164ec703msh88844cc1f0d8036p1ea4dfjsnf5e6e08f6b94"
 			}
 		})
 
 		const data1 =await response.json();
-		const {data} = data1;
-		console.log(data.covid19Stats[117]);
-		document.getElementById('number4').textContent = data.covid19Stats[117].confirmed;
-		document.getElementById('number5').textContent = data.covid19Stats[117].deaths;
-		document.getElementById('number6').textContent = data.covid19Stats[117].recovered;
+		const {latest_stat_by_country} = data1;
+		console.log(latest_stat_by_country);
+		const data = latest_stat_by_country[0];
+		document.getElementById('number4').textContent = data.total_cases;
+		document.getElementById('number5').textContent = data.total_deaths;
+		document.getElementById('number6').textContent = data.total_recovered;
 		
 
 }
