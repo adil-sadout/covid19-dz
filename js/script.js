@@ -1,6 +1,6 @@
 var api_url_global_stats = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php"
-// var api_url_algeria_stats = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=algeria"
-var api_url_algeria_stats2 = "https://corona.lmao.ninja/countries/algeria"
+var api_url_algeria_stats = "https://covid-19-coronavirus-statistics.p.rapidapi.com/v1/stats?country=algeria"
+// var api_url_algeria_stats2 = "https://corona.lmao.ninja/countries/algeria"
 
 
 
@@ -26,45 +26,50 @@ async function getCovidGlobalStats(){
 }
 getCovidGlobalStats();
 
-// async function getCovidAlgeriaStats(){
-// 		const response = await fetch(api_url_algeria_stats, {
-// 			"method": "GET",
-// 			"headers": {
-// 				"x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
-// 				"x-rapidapi-key": "95164ec703msh88844cc1f0d8036p1ea4dfjsnf5e6e08f6b94"
-// 			}
-// 		})
-
-// 		const data1 =await response.json();
-// 		const {data} = data1
-// 		console.log(data.covid19Stats[104]);
-// 		document.getElementById('number4').textContent = data.covid19Stats[104].confirmed;
-// 		document.getElementById('number5').textContent = data.covid19Stats[104].deaths;
-// 		document.getElementById('number6').textContent = data.covid19Stats[104].recovered;
-		
-
-// }
-
 async function getCovidAlgeriaStats(){
-		const response = await fetch(api_url_algeria_stats2)
+		const response = await fetch(api_url_algeria_stats, {
+			"method": "GET",
+			"headers": {
+				"x-rapidapi-host": "covid-19-coronavirus-statistics.p.rapidapi.com",
+				"x-rapidapi-key": "95164ec703msh88844cc1f0d8036p1ea4dfjsnf5e6e08f6b94"
+			}
+		})
 
 		const data1 =await response.json();
-
-		const {cases,deaths,recovered} = data1;
-		document.getElementById('number4').textContent = cases;
-		document.getElementById('number5').textContent = deaths;
-		document.getElementById('number6').textContent = recovered;
+		const {data} = data1;
+		console.log(data.covid19Stats[117]);
+		document.getElementById('number4').textContent = data.covid19Stats[117].confirmed;
+		document.getElementById('number5').textContent = data.covid19Stats[117].deaths;
+		document.getElementById('number6').textContent = data.covid19Stats[117].recovered;
 		
 
 }
 
 
 
-
-
-
-
-
-
 getCovidAlgeriaStats();
+
+
+// async function getCovidAlgeriaStats(){
+// 		const response = await fetch(api_url_algeria_stats2)
+
+// 		const data1 =await response.json();
+
+// 		const {cases,deaths,recovered} = data1;
+// 		document.getElementById('number4').textContent = cases;
+// 		document.getElementById('number5').textContent = deaths;
+// 		document.getElementById('number6').textContent = recovered;
+		
+
+// }
+
+
+
+
+
+
+
+
+
+
 
