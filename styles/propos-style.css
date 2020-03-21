@@ -22,11 +22,15 @@
 	width: 60%;
 }
 
+.main-container__who--title{
+	padding: 10px 0;
+}
+
 .main-container__who h2{
 	display: inline-block;
 	font-size: 2rem;
 	vertical-align: bottom;
-	padding: 5px 0;
+	padding: 1px 0;
 }
 
 
@@ -48,4 +52,26 @@
 .main-container__who li a{
 	color: white;
 	text-decoration: underline;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px){
+	.main-container__propos{
+		padding: 40px 0 10px 0;
+	}
+	.main-container__propos h1{
+		font-size: 2.5rem;
+
+	}
+
+	.main-container__who--title h2{
+		font-size: 1.5rem;
+	}
+
+	.main-container__who li{
+		text-align: center;
+	}
 }
