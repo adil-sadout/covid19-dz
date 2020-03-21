@@ -52,7 +52,7 @@ a, ul, li, button{
 	padding: 10px;
 	background: #E02828;
 	font-family: 'Oswald', sans-serif;
-	width: 175px;
+	width: 100%;
 	height: 45px;
 	border-radius: 5px;
 	color: white;
@@ -60,6 +60,11 @@ a, ul, li, button{
 
 .main-navbar__donate--coin{
 	height: 20px;
+}
+
+
+.sandwish{
+	display: none;
 }
 
 
@@ -77,3 +82,123 @@ body{
 	padding-bottom: 30px;
 	border-radius: 10px;
 }
+
+
+
+.mobile-navbar{
+	display: none;
+}
+
+
+
+
+.main-navbar__logo{
+	height: 35px;
+	vertical-align: bottom;
+	justify-content: space-between;
+}
+
+
+
+.sandwish{
+	display: none;
+	width: 40px;
+	background: transparent;
+	border: none;
+	margin-bottom: 15px;
+}
+
+.sandwish div{
+	margin: 4px 0;
+	width: 100%;
+	height: 5px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+
+
+.mobile-navbar__list ul{
+	width: 100%;
+}
+
+
+.mobile-navbar__list li{
+	display: block;
+	height: 55px;
+	font-size: 1.5rem;
+	background: #292929;
+	text-align: center;
+}
+
+
+.mobile-navbar__list li a{
+	color: white;
+	vertical-align: middle;
+}
+
+
+#mobile-navbar__donate{
+	background: #E02828;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+	nav{
+		display: none;
+	}
+
+	.main-navbar__donate{
+		display: none;
+	}
+	
+	.sandwish{
+		display: block;
+	}
+
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

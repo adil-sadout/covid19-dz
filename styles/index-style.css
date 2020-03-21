@@ -62,7 +62,10 @@
 }
 
 .main-container__stats--stats-recovered .number{
-	color: lightgreen
+	color: lightgreen;
+
+
+}
 
 
 
@@ -70,5 +73,17 @@
 
 
 
+@media only screen and (max-width: 1025px){
+
+	.main-container__stats--stats div{
+		width: 100%;
+		display: block;
+		
+	}
+
+	
 
 
+
+
+}
