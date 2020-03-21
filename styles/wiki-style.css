@@ -130,3 +130,57 @@ h2{
 	font-size: 1rem;
 	color: white;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1025px){
+
+	.main-container{
+		padding: 20px;
+	}
+
+	.main-container__whatsiscovid--list{
+		padding: 30px;
+	}
+
+	.main-container__whatsiscovid--list li{
+		text-align: center;
+		font-size: 1.5rem;
+		padding-top: 10px;
+	}
+
+
+	.main-container__whatsiscovid--question div{
+		text-align: center;
+	}
+	.main-container__whatsiscovid--question li{
+	
+		font-size: 1.5rem;
+	}
+
+	.main-container__whatsiscovid--question-2 div h3{
+		text-align: center;
+	}
+
+	.main-container__whatsiscovid--question-2--tip-3 ul{
+		padding-top: 20px;
+	}
+
+	.main-container__whatsiscovid--question-2--tip-3 ul li{
+
+		font-size: 1.6rem;
+
+	}
+}
