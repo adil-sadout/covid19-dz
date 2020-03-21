@@ -145,7 +145,7 @@ h2{
 
 
 
-@media only screen and (max-width: 1025px){
+@media only screen and (max-width: 1024px){
 
 	.main-container{
 		padding: 20px;
@@ -184,3 +184,5 @@ h2{
 
 	}
 }
+
+

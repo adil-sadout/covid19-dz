@@ -1,7 +1,5 @@
 
 
-
-
 .map-info{
 	font-size: 20px;
 	display: block;
@@ -9,7 +7,6 @@
 	padding: 20px;
 	width: 350px;
 	margin: auto;
-	text-align: left;
 }
 
 
@@ -25,4 +22,66 @@ iframe{
 
 .map-info li{
 	color: white;
+}
+
+.map-info--titlename{
+	
+	font-size:1.5rem;
+}
+
+.map-info--titlename1{
+	color:black;
+}
+
+
+.map-info--titlename2{
+	color:purple;
+}
+
+
+.map-info--titlename3{
+	color:red;
+}
+
+
+.map-info--titlename4{
+	color:orange;
+}
+
+
+.map-info--titlename5{
+	color:lightblue;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 400px){
+
+	.map-info{
+		padding: 20px 5px;
+		font-size: 1rem;
+	}
+
+	.map-info h2{
+		font-style: 1rem;
+	}
+
+	.map-info--titlename{
+
+	
+		font-size:1rem;
+	}
+
+	iframe {
+		height: 400px;
+	}
+
 }
