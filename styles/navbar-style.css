@@ -22,9 +22,7 @@ a, ul, li, button{
 }
 
 
-.main-navbar__logo{
-	height: 50px;
-}
+
 
 
 .main-navbar nav ul{
@@ -93,7 +91,7 @@ body{
 
 
 .main-navbar__logo{
-	height: 35px;
+	height: 50px;
 	vertical-align: bottom;
 	justify-content: space-between;
 }
