@@ -156,6 +156,7 @@ function createwilaya(wilaya){
 	valuetable =[wilaya.fr,wilaya.confirmed,wilaya.active,wilaya.in_hospital,wilaya.deaths,wilaya.recovers,wilaya.males,wilaya.females];
 
 	tr = document.createElement("tr");
+tr.setAttribute('class',"wilaya__table--row")
 	for (i=0;i<classtable.length;i++){
 		td=createrowwilaya(classtable[i],valuetable[i],valuetable[1]);
 		tr.appendChild(td);
@@ -180,6 +181,36 @@ function createrowwilaya(classname,value,confirmed){
 }
 
 
+
+
+
+
+/*Filter*/
+
+
+filter = document.getElementById("filter");
+
+filter.addEventListener('input',filterwilaya);
+
+
+
+
+function filterwilaya(input){
+	let word = input.target.value.toUpperCase();
+	console.log()
+	let wilayas = document.querySelectorAll(".wilaya__table--row");
+
+	wilayas.forEach(wilaya => {
+
+		const name = wilaya.querySelector(".fr-case").innerText;
+		if (name.indexOf(word)>-1){
+			wilaya.style.display="table-row";
+		}else{
+			wilaya.style.display="none";
+		}
+	})
+	
+}
 
 
 
