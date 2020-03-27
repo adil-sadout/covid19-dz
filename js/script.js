@@ -157,7 +157,7 @@ function createwilaya(wilaya){
 
 	tr = document.createElement("tr");
 	for (i=0;i<classtable.length;i++){
-		td=createrowwilaya(classtable[i],valuetable[i]);
+		td=createrowwilaya(classtable[i],valuetable[i],valuetable[1]);
 		tr.appendChild(td);
 	}
 	table.appendChild(tr);
@@ -165,10 +165,17 @@ function createwilaya(wilaya){
 
 }
 
-function createrowwilaya(classname,value){
+function createrowwilaya(classname,value,confirmed){
 	td = document.createElement("td");
 	td.setAttribute("class", "wilaya__table-element td-element "+classname);
-	td.textContent=value;
+	if ((classname == "males-case") || (classname == "females-case")){
+		value = (value*100/confirmed).toFixed(1);
+		td.textContent=value+"%";
+		
+	}else{
+		td.textContent=value;
+	}
+	
 	return td;
 }
 
