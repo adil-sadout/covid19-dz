@@ -3,7 +3,7 @@
 
 var api_url_global_stats = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/worldstat.php"
 var api_url_algeria_stats = "https://coronavirus-monitor.p.rapidapi.com/coronavirus/latest_stat_by_country.php?country=algeria"
-// var api_url_algeria_stats2 = "https://corona.lmao.ninja/countries/algeria"
+var api_url_algeria_wilaya = "https://api.healthdz.com/covid19/now"
 
 
 
@@ -51,6 +51,8 @@ async function getCovidAlgeriaStats(){
 
 
 
+
+
 getCovidGlobalStats();
 getCovidAlgeriaStats();
 
@@ -87,3 +89,32 @@ document.getElementById("sandwish-button").addEventListener("click", function(){
 	
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** For Adding wilayas **/
+
+
+
+
+
+
+async function getCovidAlgeriaStatsWilaya(){
+	const response = await fetch(api_url_algeria_wilaya);
+	const data2 =await response.json();
+	console.log(data2);
+}
+
+getCovidAlgeriaStatsWilaya();
+
