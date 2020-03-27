@@ -114,7 +114,65 @@ async function getCovidAlgeriaStatsWilaya(){
 	const response = await fetch(api_url_algeria_wilaya);
 	const data2 =await response.json();
 	console.log(data2);
+	for (var i=0;i < data2.length;i++){
+		createwilaya(data2[i]);
+	}
 }
 
 getCovidAlgeriaStatsWilaya();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function createwilaya(wilaya){
+
+	table= document.getElementsByClassName("main-container__stats-wilaya__table")[0];
+
+	classtable=["fr-case","confirmed-case","active-case","hospital-case","deaths-case","recovers-case","males-case","females-case"];
+
+	valuetable =[wilaya.fr,wilaya.confirmed,wilaya.active,wilaya.in_hospital,wilaya.deaths,wilaya.recovers,wilaya.males,wilaya.females];
+
+	tr = document.createElement("tr");
+	for (i=0;i<classtable.length;i++){
+		td=createrowwilaya(classtable[i],valuetable[i]);
+		tr.appendChild(td);
+	}
+	table.appendChild(tr);
+
+
+}
+
+function createrowwilaya(classname,value){
+	td = document.createElement("td");
+	td.setAttribute("class", "wilaya__table-element td-element "+classname);
+	td.textContent=value;
+	return td;
+}
+
+
+
+
 

@@ -123,40 +123,47 @@
 	width: 150px;
 }
 
+.main-container__stats-wilaya-filter button{
+	margin: 0 5px;
+	color: black;
+	background: white;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.main-container__stats-wilaya-filter button:active{
+	background-color: none;
+}
+
+.main-container__stats-wilaya-filter button:focus{
+	outline: none;
+}
+
 .main-container__stats-wilaya__table{
 	width: 90%;
 	margin: auto;
 }
 
-.main-container__stats-wilaya__table-row{
-	
-}
 
+.td-element{
+	border-bottom: 1px solid gray;
+	color:white;
+}
 .wilaya__header--element{
 	width: 12.5%;
 	padding: 5px 0;
 	font-size: 1rem;
-	color: rgb(245, 247, 224);
+	color: rgb(146, 156, 31);
+}
+.fr-case{
+	color: rgb(129, 129, 129);
+	text-align: left;
 }
 
-.wilaya__table-element{
-	border-bottom: 1px solid gray;
-}
 
-.wilaya-name,.confirmed-case,.active-case,.male-case,.female-case{
-	color: white;
-}
-.hospital-case{
-	color: rgb(159, 196, 218);
-}
 
-.death-case{
-	color: red;
-}
-
-.recovered-case{
-	color: #90EE90;
-}
 
 
 
