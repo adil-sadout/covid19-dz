@@ -204,13 +204,23 @@ function filterwilaya(input){
 
 		const name = wilaya.querySelector(".fr-case").innerText;
 		if (name.indexOf(word)>-1){
-			wilaya.style.display="table-row";
+			console.log(window.screen.availWidth);
+			if (window.innerWidth > "600"){
+				wilaya.style.display="table-row";
+			}else{
+				wilaya.style.display="block";
+			}
 		}else{
 			wilaya.style.display="none";
 		}
 	})
 	
 }
+
+
+
+
+
 
 
 
