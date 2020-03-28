@@ -153,7 +153,7 @@ function createwilaya(wilaya){
 
 	classtable=["fr-case","confirmed-case","active-case","hospital-case","deaths-case","recovers-case","males-case","females-case"];
 
-	valuetable =[wilaya.fr,wilaya.confirmed,wilaya.active,wilaya.in_hospital,wilaya.deaths,wilaya.recovers,wilaya.males,wilaya.females];
+	valuetable =[wilaya.fr,wilaya.confirmed,wilaya.active,wilaya.imported,wilaya.deaths,wilaya.recovers,wilaya.males,wilaya.females];
 
 	tr = document.createElement("tr");
 tr.setAttribute('class',"wilaya__table--row")
