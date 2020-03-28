@@ -176,12 +176,12 @@
 	/* Hide table headers (but not display: none;, for accessibility) */
 
 	
-	tr { border: 1px solid #ccc; }
+	tr { border: 1px dashed rgb(196, 194, 194); }
 	
 	td { 
 		/* Behave  like a "row" */
 		border: none;
-		border-bottom: 1px solid #eee; 
+		border-bottom: 1px dashed #eee; 
 		position: relative;
 		padding-left: 50%; 
 	}
