@@ -140,7 +140,6 @@
 	position: fixed;
 	top: 90%;
 	right: 5%;
-	/*display: none;*/
 }
 
 
@@ -213,9 +212,7 @@
 
 
 
-	.fb-share-button{
-		display: block;
-	}
+	
 }
 
 
