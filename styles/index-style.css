@@ -136,7 +136,12 @@
 
 
 
-
+.fb-share-button{
+	position: fixed;
+	top: 90%;
+	right: 5%;
+	/*display: none;*/
+}
 
 
 
@@ -205,6 +210,12 @@
 	td:nth-of-type(5):before { content: "Guéri"; }
 	td:nth-of-type(6):before { content: "Hommes"; }
 	td:nth-of-type(7):before { content: "Femmes"; }
+
+
+
+	.fb-share-button{
+		display: block;
+	}
 }
 
 
