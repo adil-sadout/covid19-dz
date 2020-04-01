@@ -151,9 +151,9 @@ function createwilaya(wilaya){
 
 	table= document.getElementsByClassName("main-container__stats-wilaya__table")[0];
 
-	classtable=["fr-case","confirmed-case","active-case"/*,"hospital-case"*/,"deaths-case","recovers-case","males-case","females-case"];
+	classtable=["fr-case","confirmed-case","active-case"/*,"hospital-case"*/,"deaths-case","recovers-case"/*,"males-case","females-case"*/];
 
-	valuetable =[wilaya.fr,wilaya.confirmed,wilaya.active,wilaya/*.imported,wilaya*/.deaths,wilaya.recovers,wilaya.males,wilaya.females];
+	valuetable =[wilaya.fr,wilaya.confirmed,wilaya.active,wilaya.deaths/*.imported,wilaya*/,wilaya.recovers/*,wilaya.males,wilaya.females*/];
 
 	tr = document.createElement("tr");
 tr.setAttribute('class',"wilaya__table--row")
@@ -168,15 +168,15 @@ tr.setAttribute('class',"wilaya__table--row")
 
 function createrowwilaya(classname,value,confirmed){
 	td = document.createElement("td");
-	td.setAttribute("class", "wilaya__table-element td-element "+classname);
-	if ((classname == "males-case") || (classname == "females-case")){
+	td.setAttribute("class" , "wilaya__table-element td-element " + classname);
+/*	if ((classname == "males-case") || (classname == "females-case")){
 		value = (value*100/confirmed).toFixed(1);
 		td.textContent=value+"%";
 		
 	}else{
-		td.textContent=value;
-	}
-	
+		
+	}*/
+	td.textContent=value;
 	return td;
 }
 
