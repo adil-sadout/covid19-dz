@@ -144,7 +144,7 @@ getCovidAlgeriaStatsWilaya();
 
 
 
-
+ 
 
 
 function createwilaya(wilaya){
@@ -194,7 +194,7 @@ filter.addEventListener('input',filterwilaya);
 
 
 
-
+/*
 function filterwilaya(input){
 	let word = input.target.value.toUpperCase();
 	console.log()
@@ -216,7 +216,7 @@ function filterwilaya(input){
 	})
 	
 }
-
+*/
 
 
 
